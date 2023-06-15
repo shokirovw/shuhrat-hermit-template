@@ -14,15 +14,17 @@ export default function Example() {
                 <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
                   <Image
                     className="h-12"
-                    src="https://tailwindui.com/img/logos/workcation-logo-indigo-900.svg"
+                    src="/level_logo.svg"
                     alt="Workcation"
+                    width={100}
+                    height={60}
                   />
                 </div>
                 <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
-                  <Image className="h-12" src="https://tailwindui.com/img/logos/tuple-logo-indigo-900.svg" alt="Tuple" />
+                  <Image className="h-12" src="/level_logo.svg" alt="Tuple" width={100} height={60} />
                 </div>
                 <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
-                  <Image className="h-12" src="https://tailwindui.com/img/logos/level-logo-indigo-900.svg" alt="Level" />
+                  <Image className="h-12" src="/level_logo.svg" alt="Level" width={100} height={60} />
                 </div>
               </div>
             </div>

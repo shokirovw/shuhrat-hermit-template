@@ -22,8 +22,10 @@ export default function Hero () {
               <span className="sr-only">Your Company</span>
               <Image
                 className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                src="/logo.svg"
                 alt=""
+                width={800}
+                height={800}
               />
             </a>
           </div>
@@ -58,8 +60,10 @@ export default function Hero () {
                 <span className="sr-only">Your Company</span>
                 <Image
                   className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                  src="/logo.svg"
                   alt=""
+                  width={800}
+                  height={800}
                 />
               </a>
               <button
