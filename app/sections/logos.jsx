@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 /* This example requires Tailwind CSS v2.0+ */
 export default function Example() {
     return (
@@ -10,17 +12,17 @@ export default function Example() {
             <div className="flow-root self-center mt-8 lg:mt-0">
               <div className="-mt-4 -ml-8 flex flex-wrap justify-between lg:-ml-4">
                 <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
-                  <img
+                  <Image
                     className="h-12"
                     src="https://tailwindui.com/img/logos/workcation-logo-indigo-900.svg"
                     alt="Workcation"
                   />
                 </div>
                 <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
-                  <img className="h-12" src="https://tailwindui.com/img/logos/tuple-logo-indigo-900.svg" alt="Tuple" />
+                  <Image className="h-12" src="https://tailwindui.com/img/logos/tuple-logo-indigo-900.svg" alt="Tuple" />
                 </div>
                 <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
-                  <img className="h-12" src="https://tailwindui.com/img/logos/level-logo-indigo-900.svg" alt="Level" />
+                  <Image className="h-12" src="https://tailwindui.com/img/logos/level-logo-indigo-900.svg" alt="Level" />
                 </div>
               </div>
             </div>

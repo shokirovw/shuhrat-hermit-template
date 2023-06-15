@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 /* This example requires Tailwind CSS v2.0+ */
 const people = [
     {
@@ -27,7 +29,7 @@ const people = [
               {people.map((person) => (
                 <li key={person.name} className="py-10 px-6 bg-gray-800 text-center rounded-lg xl:px-10 xl:text-left">
                   <div className="space-y-6 xl:space-y-10">
-                    <img className="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56" src={person.imageUrl} alt="" />
+                    <Image className="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56" src={person.imageUrl} alt="" />
                     <div className="space-y-2 xl:flex xl:items-center xl:justify-between">
                       <div className="font-medium text-lg leading-6 space-y-1">
                         <h3 className="text-white">{person.name}</h3>
