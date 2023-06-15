@@ -17,7 +17,7 @@ export default function Example() {
               <Image className="h-12 w-auto" src="https://tailwindui.com/img/logos/workcation-logo-white.svg" alt="" />
               <blockquote className="mt-6 text-white">
                 <p className="text-xl font-medium sm:text-2xl">
-                  Workflow has completely transformed how we interact with customers. We've seen record bookings, higher
+                  Workflow has completely transformed how we interact with customers. Weve seen record bookings, higher
                   customer satisfaction, and reduced churn.
                 </p>
                 <footer className="mt-6">
