@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
-import { ChevronRightIcon, StarIcon } from '@heroicons/react/solid'
+import { ChevronRightIcon, StarIcon, PhoneOutgoingIcon } from '@heroicons/react/solid'
 import Image from 'next/image'
 
 const navigation = [
@@ -21,11 +21,11 @@ export default function Hero () {
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <Image
-                className="h-8 w-auto"
-                src="/logo.svg"
+                className="w-auto h-6"
+                src="/logo.png"
                 alt=""
-                width={800}
-                height={800}
+                width={300}
+                height={10}
               />
             </a>
           </div>
@@ -48,7 +48,7 @@ export default function Hero () {
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-              Log in <span aria-hidden="true">&rarr;</span>
+              Contact us <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
         </nav>
@@ -102,7 +102,7 @@ export default function Hero () {
         </Dialog>
       </header>
 
-      <div className="relative isolate px-6 pt-14 lg:px-8">
+      <div className="relative isolate px-6 lg:px-8">
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true"
@@ -115,33 +115,37 @@ export default function Hero () {
             }}
           />
         </div>
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-          <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+        <div className="mx-auto max-w-8xl py-32 sm:py-48 lg:pt-18 lg:pb-8">
+          <div className="hidden sm:mb-10 sm:flex sm:justify-center">
+            <div className="relative rounded-full px-3 py-1 text-xs leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
               Announcing our next round of funding.{' '}
               <a href="#" className="font-semibold text-indigo-600">
                 <span className="absolute inset-0" aria-hidden="true" />
-                Read more <span aria-hidden="true">&rarr;</span>
+                More <span aria-hidden="true">&rarr;</span>
               </a>
             </div>
           </div>
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              Data to enrich your online business
+            <h1 className="text-7xl font-bold tracking-tight text-gray-900 sm:text-8xl">
+              Transend the contraints
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p className="mt-7 text-xl leading-8 text-gray-500 max-w-4xl ml-auto mr-auto">
               Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
               fugiat veniam occaecat fugiat aliqua.
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
+            <div className="mt-14 flex items-center justify-center gap-x-6">
               <a
                 href="#"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                style={{ fontSize: 16 }}
+                className="rounded-lg bg-gray-900 px-8 py-2.5 text-lg font-medium text-white shadow-sm hover:bg-gray-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Get started
+                Start Deploying 
               </a>
-              <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                Learn more <span aria-hidden="true">→</span>
+              <a
+                href="#"
+                className="rounded-lg ring-1 ring-gray-900 px-7 py-2.5 text-base font-medium text-black shadow-sm hover:bg-slate-900 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Learn more
               </a>
             </div>
           </div>

@@ -1,36 +1,50 @@
 import Image from "next/image";
 
-/* This example requires Tailwind CSS v2.0+ */
 export default function Example() {
-    return (
-      <div className="bg-indigo-200 bg-opacity-25">
-        <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-          <div className="lg:grid lg:grid-cols-2 lg:gap-8">
-            <h2 className="max-w-md mx-auto text-3xl font-extrabold text-indigo-900 text-center lg:max-w-xl lg:text-left">
-              The worlds most innovative companies use Workflow
-            </h2>
-            <div className="flow-root self-center mt-8 lg:mt-0">
-              <div className="-mt-4 -ml-8 flex flex-wrap justify-between lg:-ml-4">
-                <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
-                  <Image
-                    className="h-12"
-                    src="/level_logo.svg"
-                    alt="Workcation"
-                    width={100}
-                    height={60}
-                  />
-                </div>
-                <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
-                  <Image className="h-12" src="/level_logo.svg" alt="Tuple" width={100} height={60} />
-                </div>
-                <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
-                  <Image className="h-12" src="/level_logo.svg" alt="Level" width={100} height={60} />
-                </div>
-              </div>
-            </div>
-          </div>
+  return (
+    <div className="bg-white py-24 sm:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <h2 className="text-center text-lg font-semibold leading-8 text-gray-600">
+          Trusted by the world’s most innovative teams
+        </h2>
+        <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+          <Image
+            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+            src="https://tailwindui.com/img/logos/158x48/transistor-logo-gray-900.svg"
+            alt="Transistor"
+            width={158}
+            height={48}
+          />
+          <Image
+            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+            src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg"
+            alt="Reform"
+            width={158}
+            height={48}
+          />
+          <Image
+            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+            src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg"
+            alt="Tuple"
+            width={158}
+            height={48}
+          />
+          <Image
+            className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
+            src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg"
+            alt="SavvyCal"
+            width={158}
+            height={48}
+          />
+          <Image
+            className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+            src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg"
+            alt="Statamic"
+            width={158}
+            height={48}
+          />
         </div>
       </div>
-    )
-  }
-  
+    </div>
+  )
+}
